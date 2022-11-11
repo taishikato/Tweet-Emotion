@@ -15,7 +15,7 @@ https://user-images.githubusercontent.com/980588/201276868-290e7c8f-5bd0-4eb1-b2
 
 ## How to install
 
-1. Create an API
+1. [Create an API](https://github.com/taishikato/Tweet-Emotion#create-an-api-to-call-openai)
 2. Open [chrome://extensions/](chrome://extensions/)
 3. Click "Load unpacked" button on the top left.
 4. Choose the directry where you cloned this repository.
