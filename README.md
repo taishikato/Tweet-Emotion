@@ -15,15 +15,16 @@ https://user-images.githubusercontent.com/980588/201276868-290e7c8f-5bd0-4eb1-b2
 
 ## How to install
 
-1. Open [chrome://extensions/](chrome://extensions/)
-2. Click "Load unpacked" button on the top left.
-3. Choose the directry where you cloned this repository.
+1. Create an API
+2. Open [chrome://extensions/](chrome://extensions/)
+3. Click "Load unpacked" button on the top left.
+4. Choose the directry where you cloned this repository.
 
-## API calling GPT-3
+## Create an API to call OpenAI
 
 You need to build an API to call GPT-3 and put it [here](https://github.com/taishikato/Tweet-Emotion/blob/main/content-script.js#L19).
 
-I quickly made it on Deno Deploy (I really wanna use [Kuiq](https://kuiq.io/), but Supabase Edge Functions (Kuiq uses it behind the scene) currently has a problem and can't use it 🥲).
+I quickly made it on Deno Deploy (I really wanna use [Kuiq](https://kuiq.io/), but Supabase Edge Functions (Kuiq uses it behind the scene) currently doesn't recognize `XMLHttpRequest` even with `import "https://deno.land/x/xhr@0.1.0/mod.ts"`, so I can't use it 🥲).
 
 This is my code for your reference.
 
