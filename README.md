@@ -36,7 +36,7 @@ import { oakCors } from "https://deno.land/x/cors/mod.ts";
 const router = new Router();
 router.get('/', async (context) => {
   const configuration = new Configuration({
-    apiKey: "YOUR OPEN API KEY"
+    apiKey: "YOUR OPEN AI API KEY"
   });
   const openai = new OpenAIApi(configuration);
 
