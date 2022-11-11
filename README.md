@@ -48,16 +48,16 @@ router.get('/', async (context) => {
     return
   }
 
-	try {
-  	const response = await openai.createCompletion({
-  	  model: "text-davinci-002",
-  	  prompt: `Decide whether a Tweet's sentiment is positive, neutral, or negative.\n\nTweet: \"${tweet}\"\nSentiment:`,
-  	  temperature: 0,
-  	  max_tokens: 60,
-  	  top_p: 1,
-  	  frequency_penalty: 0.5,
-  	  presence_penalty: 0,
-  	});
+  try {
+    const response = await openai.createCompletion({
+    model: "text-davinci-002",
+    prompt: `Decide whether a Tweet's sentiment is positive, neutral, or negative.\n\nTweet: \"${tweet}\"\nSentiment:`,
+    temperature: 0,
+    max_tokens: 60,
+    top_p: 1,
+    frequency_penalty: 0.5,
+    presence_penalty: 0,
+  });
 
     context.response.body = response
   } catch(err) {
