@@ -1,0 +1,23 @@
+{
+  "short_name": "Tweet Emotion",
+  "name": "Tweet Emotion",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "action": {
+    "default_icon": {
+      "48": "/images/icon48.png"
+    }
+  },
+  "icons": {
+    "48": "/images/icon48.png"
+  },
+  "content_security_policy": {
+    "script-src": "self"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://twitter.com/home"],
+      "js": ["content-script.js"]
+    }
+  ]
+}
